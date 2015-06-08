@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "oneapm": "http://npm.oneapm.com/oneapm/-/oneapm-1.2.2.tgz",
-    "request": "^2.57.0"
+    "request": "*"
   }
 }
