@@ -64,6 +64,10 @@ require('mongodb').MongoClient.connect('mongodb://localhost:27017/oneapm', funct
       require('../lib/client')(8080);
     }, 1000)
   });
-})
+});
+
+setTimeout(function () {
+  process.exit(0);
+}, 60E3)
 
 

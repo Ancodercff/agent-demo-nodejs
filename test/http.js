@@ -12,5 +12,5 @@ server.listen(function () {
 
 setTimeout(function () {
   process.exit(0);
-}, 30000)
+}, 60E3)
 
