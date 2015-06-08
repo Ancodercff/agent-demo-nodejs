@@ -6,4 +6,4 @@ node_js:
 - "0.12"
 - "1.0"
 - "1.5"
-script: "node ./test/http.js"
+script: "npm install bunyan && node ./test/http.js | bunyan"
