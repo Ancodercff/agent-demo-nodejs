@@ -1,13 +1,13 @@
 var oneapm = require('oneapm');
 
 var server = require('http').createServer(function (req, res) {
-  res.end('ok');
+  res.end();
 });
 
 server.listen(function () {
   setInterval(function () {
     require('../lib/client')(server.address().port);
-  }, 100)
+  }, 1000)
 });
 
 setTimeout(function () {
