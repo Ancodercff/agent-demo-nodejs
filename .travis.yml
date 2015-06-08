@@ -10,4 +10,4 @@ services:
   - redis-server
   - mongodb
   - memcached
-script: "npm install bunyan && node ./test/http.js | bunyan"
+script: "npm install bunyan && node ./test/express.js | bunyan"

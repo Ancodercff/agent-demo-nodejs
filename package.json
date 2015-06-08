@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "OneAPM NodeJS Agent Demo",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "oneapm": "http://npm.oneapm.com/oneapm/-/oneapm-1.2.2.tgz"
+    "express": "^4.12.4",
+    "memcached": "^2.1.0",
+    "mongodb": "^2.0.33",
+    "oneapm": "http://npm.oneapm.com/oneapm/-/oneapm-1.2.2.tgz",
+    "redis": "^0.12.1"
   }
 }
