@@ -4,8 +4,8 @@ node_js:
 - "0.10"
 - "0.11"
 - "0.12"
-- "1.0"
-- "1.5"
+- "1.x"
+- "2.x"
 sudo: false
 services:
   - redis-server
