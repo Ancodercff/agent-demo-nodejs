@@ -6,6 +6,7 @@ node_js:
 - "0.12"
 - "1.0"
 - "1.5"
+sudo: false
 services:
   - redis-server
   - mongodb
