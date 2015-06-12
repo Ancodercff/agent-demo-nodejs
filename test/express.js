@@ -68,6 +68,6 @@ require('mongodb').MongoClient.connect('mongodb://localhost:27017/oneapm', funct
 
 setTimeout(function () {
   process.exit(0);
-}, 300E3)
+}, 60E3)
 
 
