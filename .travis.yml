@@ -11,4 +11,4 @@ services:
   - redis-server
   - mongodb
   - memcached
-script: "npm install bunyan && node ./test/express.js | bunyan"
+script: "npm install bunyan && npm install oneapm --reg=http://npm.oneapm.com && node ./test/express.js | bunyan"
