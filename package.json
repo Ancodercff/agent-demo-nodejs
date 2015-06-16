@@ -10,7 +10,6 @@
     "express": "*",
     "memcached": "*",
     "mongodb": "*",
-    "redis": "*",
-    "redisq": "*"
+    "redis": "*"
   }
 }
