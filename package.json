@@ -11,6 +11,6 @@
     "memcached": "*",
     "mongodb": "*",
     "redis": "*",
-    "redisq": "^0.1.18"
+    "redisq": "*"
   }
 }
