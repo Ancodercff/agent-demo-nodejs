@@ -5,6 +5,14 @@ var redis = require('redis').createClient();
 var memcached = new (require('memcached'));
 var mongodb;
 
+app.use(function (req, res, next) {
+  if (Math.random() > 0.5) {
+    oneapm.noticeError(new Error('MyError'), {
+      msg1: 'message1'
+    });
+  }
+  next();
+})
 
 // redis
 app.use(function (req, res, next) {
