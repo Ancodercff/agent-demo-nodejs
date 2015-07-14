@@ -59,6 +59,13 @@ app.use(function (req, res, next) {
       })
     })
   });
+});
+
+app.use(function (req, res, next) {
+  require('http').request('http://static.oneapm.com/', function (r) {
+    r.pipe(process.stdout);
+    next();
+  }).end();
 })
 
 app.get("/", function (req, res) {
