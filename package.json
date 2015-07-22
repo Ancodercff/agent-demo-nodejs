@@ -1,6 +1,6 @@
 {
   "name": "agent-demo-nodejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OneAPM NodeJS Agent Demo",
   "main": "index.js",
   "scripts": {},
