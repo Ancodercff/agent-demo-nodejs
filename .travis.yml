@@ -11,5 +11,6 @@ services:
   - mongodb
   - memcached
   - mysql
-
+before_script:
+  - mysql -e 'create database test;'
 script: "sh ./run.sh"
