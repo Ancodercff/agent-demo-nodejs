@@ -17,7 +17,8 @@ app.use(function (req, res, next) {
 
 // mysql
 var pool = mysql.createPool({
-  username: "root",
+  host: "127.0.0.1",
+  username: "travis",
   password: ""
 });
 
