@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 var redis = require('redis').createClient();
 var memcached = new (require('memcached'));
+var mysql = require('mysql');
 var mongodb;
 
 app.use(function (req, res, next) {
@@ -12,6 +13,19 @@ app.use(function (req, res, next) {
     });
   }
   next();
+})
+
+// mysql
+var pool = mysql.createPool({
+  username: "root",
+  password: ""
+});
+
+app.use(function (req, res, next) {
+  pool.query('select 1+1 as solution', function (err, result) {
+    console.log(err, result);
+    next();
+  })
 })
 
 // redis
