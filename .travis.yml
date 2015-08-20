@@ -12,4 +12,4 @@ services:
   - memcached
   - mysql
 
-script: "./run.sh"
+script: "sh ./run.sh"
