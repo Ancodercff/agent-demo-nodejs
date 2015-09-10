@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-npm install bunyan
-npm install oneapm@dev --reg=http://npm.oneapm.com
+npm install -g bunyan
 node ./test/express.js | bunyan
