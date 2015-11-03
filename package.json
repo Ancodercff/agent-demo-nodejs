@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "oneapm":"*",
+    "oneapm":"dev",
     "express": "*",
     "memcached": "*",
     "mongodb": "*",
