@@ -11,6 +11,10 @@ services:
   - mongodb
   - memcached
   - mysql
+  - cassandra
 before_script:
   - mysql -e 'create database test;'
+  - "cqlsh -e \"CREATE KEYSPACE IF NOT EXISTS oneapm WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };\""
+  - cqlsh -e "USE oneapm; CREATE TABLE IF NOT EXISTS users (  uid int PRIMARY KEY,  name text );"
+
 script: "sh ./run.sh"
