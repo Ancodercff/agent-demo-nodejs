@@ -85,7 +85,7 @@ var cqlClient = new cql.Client( { hosts: ['127.0.0.1:9042'], keyspace : 'oneapm'
 app.use(function (req, res, next) {
   cqlClient.execute( 'SELECT * from users WHERE uid=184', function( err, result ) {
     // prepared query, optimized for the repeated query.
-    async.times( 100, function( index, next ) {
+    async.times( 10, function( index, next ) {
       cqlClient.executeAsPrepared( 'SELECT * from users WHERE uid=184', function( err, result ) {
         next( err );
       } );
