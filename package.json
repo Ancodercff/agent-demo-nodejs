@@ -12,6 +12,7 @@
     "memcached": "*",
     "mongodb": "*",
     "mysql": "*",
-    "redis": "*"
+    "redis": "*",
+    "node-cassandra-cql": "*"
   }
 }
