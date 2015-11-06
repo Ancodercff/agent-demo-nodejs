@@ -1,5 +1,5 @@
 exports.config = {
-  app_name: ['travisci_' + process.version],
+  app_name: [ 'Node.js应用 browser' ],
   collect_traces : true,
   slow_sql : {
     enabled : true,
