@@ -8,6 +8,7 @@
   "license": "ISC",
   "dependencies": {
     "oneapm":"dev",
+    "async": "*",
     "express": "*",
     "memcached": "*",
     "mongodb": "*",
