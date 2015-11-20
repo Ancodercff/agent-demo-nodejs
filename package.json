@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "oneapm":"dev",
+    "oneapm":"hotfix",
     "async": "*",
     "express": "*",
     "memcached": "*",
